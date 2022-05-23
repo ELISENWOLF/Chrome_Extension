@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Anime_HACKED",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["popup.js"]
+        }
+    ],
+    "browser_action":{
+        "default_icon": {"48":"./images/anime_logo.png"},
+        "default_popup": "popup.html",
+        "default_title": "Anime_HACKED :)"
+    },
+    "permissions": [
+        "bookmarks","tabs"
+      ],
+      "chrome_url_overrides":{
+          "newtab":"newpage.html"
+      }
+}
